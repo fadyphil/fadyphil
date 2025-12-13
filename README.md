@@ -33,3 +33,10 @@ A smart productivity app that uses LLMs to transcribe voice input and intelligen
 
 ### 📈 GitHub Stats
 📫 **How to reach me:** [fadyph2003@gmail.com]
+
+<!-- Snake Animation -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/fadyphil/fadyphil/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/fadyphil/fadyphil/output/github-contribution-grid-snake.svg">
+  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/fadyphil/fadyphil/output/github-contribution-grid-snake.svg">
+</picture>
