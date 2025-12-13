@@ -15,7 +15,7 @@ Currently, I am sharpening my skills by building complex applications using **Cl
 * **Environment:** Ubuntu (Linux), Git
 
 ---
-[![fady's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=Ashutosh00710&theme=github-compact)](https://github.com/ashutosh00710/github-readme-activity-graph)
+[![fady's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=fadyphil&theme=github-compact)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
 ### 🔭 What I'm Working On
 
