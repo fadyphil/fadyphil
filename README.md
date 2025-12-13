@@ -34,7 +34,13 @@ A smart productivity app that uses LLMs to transcribe voice input and intelligen
 
 ### 📈 GitHub Stats
 
-[![GitHub Streak](https://streak-stats.demolab.com/?user=fadyphil)](https://git.io/streak-stats)
+  <p>
+    <a href="https://github.com/fadyphil/github-readme-streak-stats">
+      <!-- Use https://streak-stats.demolab.com or self-host with your own Vercel app - visit https://git.io/streak-stats for instructions -->
+      <img title="🔥 Get streak stats for your profile at git.io/streak-stats" alt="DenverCoder1's streak" src="https://github-readme-streak-stats-eight.vercel.app/?user=fadyphil&theme=monokai-metallian&hide_border=true&short_numbers=true"/>
+    </a>
+    <p>🔥 Get streak stats for your profile at <a href="https://git.io/streak-stats">git.io/streak-stats</a></p>
+  </p>
 
 📫 **How to reach me:** [fadyph2003@gmail.com]
 
