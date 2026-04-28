@@ -93,10 +93,15 @@ Two sequential iterations of the same application, each targeting a specific arc
 
 [![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=fadyphil&theme=github-compact)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
+<div align="center">
 <a href="https://github.com/fadyphil">
   <img src="https://github-readme-streak-stats-eight.vercel.app/?user=fadyphil&theme=monokai-metallian&hide_border=true&short_numbers=true" />
 </a>
-
+  
 ---
 
 **Contact:** fadyph2003@gmail.com
+
+</div>
+
+
