@@ -68,6 +68,24 @@ Real-time voice conversation partner for language learning. Eliminates wait time
 
 ---
 
+### [Git-RS](https://github.com/fadyphil/git-rs) — Git Object Engine in Rust
+ 
+A from-scratch implementation of Git's core storage layer in Rust. Every object written by `git-rs` is verified readable by the official `git` binary — if the hashes match, the binary format is correct.
+ 
+Implements: `init`, `hash-object`, `cat-file`, `write-tree`, `commit-tree`, `commit`.
+ 
+**What's technically interesting:**
+ 
+- **Hash-before-compress pipeline** — `write_object` constructs the `<type> <size>\0<content>` header, computes SHA-1 over the raw object, *then* Zlib-compresses for storage. The hash is a commitment to the content before any encoding — a single transposition and official `git` rejects the object entirely.
+- **Content-addressed path derivation** — the filesystem path `.git/objects/XX/YYY...` is derived mathematically from the SHA-1 hash, not assigned. Two identical files produce one object on disk. Enforced by the storage layout, not application logic.
+- **Size validation on read** — `read_object` parses the declared size from the object header and verifies it against the actual decompressed content length. Corruption is caught explicitly rather than propagating silently.
+- **Post-order DAG traversal via call stack** — `write_tree` recurses into subdirectories before writing the parent entry. The recursion itself enforces the invariant that child hashes exist before a parent commits to them — no explicit queue or ordering logic required.
+- **`Option<String>` for the initial commit** — `read_ref` returns `None` when the branch file doesn't yet exist, propagating cleanly into `write_commit_object` as `parent: None`. No special-casing at the call site.
+- **Detached HEAD guard** — `read_head` explicitly rejects a raw hash in `.git/HEAD` with a meaningful error rather than silently treating it as a ref path.
+**Stack:** Rust · `sha1` · `flate2` · `hex`
+ 
+---
+
 ### [Trip Planner](https://github.com/fadyphil/trip-planner) — Offline-First Travel Manager
 
 Feature-first clean architecture applied to a multi-feature CRUD application. Offline-first by design using ObjectBox for persistence.
