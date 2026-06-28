@@ -86,7 +86,7 @@ Implements: `init`, `hash-object`, `cat-file`, `write-tree`, `commit-tree`, `com
  
 ---
 
-### [Trip Planner](https://github.com/fadyphil/trip-planner) — Offline-First Travel Manager
+### [Trip Planner](https://github.com/fadyphil/Trip-planner-edges-final) — Offline-First Travel Manager
 
 Feature-first clean architecture applied to a multi-feature CRUD application. Offline-first by design using ObjectBox for persistence.
 
